@@ -17,13 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    components\terminal.cpp \
+    components\qlogbrowser.cpp
 
 HEADERS += \
-    mainwindow.h
+    headers\mainwindow.h \
+    components\terminal.h \
+    components\qlogbrowser.h
 
 FORMS += \
-    mainwindow.ui
+    ui\mainwindow.ui
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
